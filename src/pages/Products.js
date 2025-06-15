@@ -17,7 +17,7 @@ import EditProductModal from '../components/EditProductModal.js';
 // import NewItemCard from '../components/NewItemCard.js';
 
 // NEW IMPORT: Add the new modal component
-import AddNewProductModal from '../components/AddNewProductModal.js';
+import AddNewProductsModal from '../components/AddNewProductModal.js';
 
 
 const ProductsPage = () => {
