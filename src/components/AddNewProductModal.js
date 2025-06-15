@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { X, Upload, Check, ChevronDown } from 'lucide-react'; // X for close, Upload for image, Check for checkbox, ChevronDown for select arrows
 
-const AddNewProductModal = ({ isOpen, onClose, onAddProduct }) => {
+const AddNewProductsModal = ({ isOpen, onClose, onAddProduct }) => {
   const [category, setCategory] = useState('');
   const [productName, setProductName] = useState('');
   const [productDescription, setProductDescription] = useState('');
@@ -483,4 +483,4 @@ const AddNewProductModal = ({ isOpen, onClose, onAddProduct }) => {
 };
 
 >>>>>>> f698a44c101a80855be16c2ed530676964f68615
-export default AddNewProductModal;
+export default AddNewProductsModal;
