@@ -1,21 +1,19 @@
-// src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Use createRoot for React 18+
-import './index.css'; // This is where your Tailwind CSS directives are imported
-import App from './App.js'; // Import your main App component
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App.js';
 
-// Get the root DOM element where your React app will be mounted.
+// Import Provider and your store
+import { Provider } from 'react-redux';
+import { store } from './app/store';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// Render your React application into the root element.
-// React.StrictMode helps in identifying potential problems in an application.
 root.render(
   <React.StrictMode>
-    <App />
+    {/* Wrap your App with the Provider and pass the Redux store */}
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
-
-// If you're using Create React App, you might have reportWebVitals here.
-// import reportWebVitals from './reportWebVitals';
-// reportWebVitals();
-
